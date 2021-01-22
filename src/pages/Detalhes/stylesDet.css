@@ -1,0 +1,91 @@
+
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 1600px;
+
+}
+.text-min-t{
+    font-size: 22px;
+}
+
+.grid-min{
+    margin-bottom: 20px;
+}
+
+.grid-min > img{
+    border-radius: 5px;
+}
+.text-min{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+.container > div > #imgPhoto {
+  margin-top: 20px;
+  padding: 15px 20px;
+  max-width: 350px;
+  border: 3px solid #2E294E;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    
+  }
+  
+  .grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 30px ;
+    text-align: center;
+    background-color: #FFF;
+  }
+  
+  .grid > article > #imgPhotoFriends {
+    margin-top: 20px;
+    padding: 10px 10px;
+    border-radius: 0px ;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    background-color: #d07373;
+    max-width: 100%;
+  }
+  
+  .grid .text {
+    padding: 16px 20px 30px;
+  }
+  
+
+  @media screen and (max-width: 768px){
+
+    .container > div > img {
+      display: flex;
+      margin-left: 36px;
+    }
+
+    .container > div > #imgPhoto {
+      margin-top: 20px;
+      padding: 15px 20px;
+      max-width: 80%;
+      border: 3px solid #2E294E;     
+    }
+
+    .grid-min{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .text-min{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding-left: 10px;
+      margin-top: 10px;
+
+    }
+
+  }
